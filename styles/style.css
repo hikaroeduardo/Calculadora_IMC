@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+}
+
+body {
+    background-color: #212441;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background-color: #2c2e42;
+    min-width: 750px;
+    min-height: 500px;
+    box-shadow: 0px 0px 10px #00000080;
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    padding: 1.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#vertical-line {
+    height: 320px;
+    border-right: 1px solid #fff;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#form .form-data label {
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    pointer-events: none;
+}
+
+#form .form-data input {
+    color: #000;
+    font-weight: bold;
+    width: 100%;
+    height: 2.60rem;
+    padding: 0.5rem;
+    outline: none;
+}
+
+.btn-action {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.btn-action button {
+    flex: 1;
+    height: 2.60rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0.9;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.btn-action button:hover {
+    opacity: 1;
+}
+
+.btn-action #btn-calc {
+    background-color: #29b249;
+    color: #fff;
+}
+
+.btn-action #btn-clear {
+    background-color: rgb(124, 120, 120);
+    color: #000;
+}
+
+.btn-restart {
+    display: flex;
+}
+
+.btn-restart button {
+    flex: 1;
+    height: 2.60rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #29b249;
+    color: #fff;
+}
+
+.result-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.text p span {
+    font-weight: bold;
+}
+
+.good {
+    color: #12db34;
+}
+
+.low {
+    color: #dbce12;
+}
+
+.medium {
+    color: #db6212;
+}
+
+.high {
+    color: #db1912;
+}
+
+.content-table {
+    width: 100%;
+}
+
+.result-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.result-container .result-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container .result-value h2 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.table-header, .table-data {
+    text-align: center;
+}
+
+.table-header h4,.table-data p {
+    flex: 1;
+}
+
+.table-header h4:nth-child(3), .table-data p:nth-child(3) {
+    max-width: 80px;
+}
+
+.table-data {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.background-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+    width: 100%;
+    height: 100vh;
+}
+
+.modal {
+    position: absolute;
+    background-color: #fff;
+    width: 500px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    animation: animate;
+    animation-duration: 850ms;
+}
+
+.modal p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+.modal button {
+    width: 100%;
+    height: 2.60rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: #2c2e42;
+    transition: .3s ease-out;
+}
+
+.modal button:hover {
+    background-color: #04061e;
+}
+
+.modal-hide {
+    display: none;
+}
+
+@keyframes animate{
+    from{opacity: 1;}
+    from{opacity: 0;}
+}

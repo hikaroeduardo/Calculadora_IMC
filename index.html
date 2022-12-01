@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Calculadora de IMC | Avalie o seu peso</title>
+</head>
+<body>
+    <div class="content">
+
+        <header>
+            <h2>calculadora de imc</h2>
+        </header> <!-- header -->
+
+        <main>
+
+            <div class="container-data">
+
+                <form id="form">
+
+                    <div class="form-data">
+                        <label for="height">Altura:</label>
+                        <input id="height" type="text" placeholder="Ex: 1.70" step="0.01">
+                    </div> <!-- form-data -->
+
+                    <div class="form-data">
+                        <label for="weight">Peso:</label>
+                        <input id="weight" type="text" placeholder="Ex: 70,5" step="0.01">
+                    </div> <!-- form-data -->
+
+                    <div class="btn-action">
+                        <button id="btn-calc">calcular</button>
+                        <button id="btn-clear">limpar</button>
+                    </div> <!-- btn-action -->
+
+                    <div class="btn-restart hide">
+                        <button id="restart-btn">Recomeçar</button>
+                    </div> <!-- btn-restart -->
+
+                </form> <!-- form -->
+
+            </div> <!-- container-data -->
+
+            <div id="vertical-line"></div>
+
+            <div class="result-container">
+                <div class="text">
+                    <h2 class="result-title">seu imc é <span>0.0</span></h2>
+                    <p class="info">Sua situação: <span></span></p>
+                </div> <!-- text -->
+
+                    <div class="content-table">
+    
+                        <div class="table">
+        
+                            <div class="table-header">
+                                <h4>IMC</h4>
+                                <h4>Classificação</h4>
+                                <h4>Obesidade</h4>
+                            </div> <!-- table-header -->
+        
+                        </div> <!-- table -->
+
+                    </div> <!-- content-table -->
+
+            </div> <!-- result-container -->
+
+        </main> <!-- main -->
+
+    </div> <!-- content -->
+
+    <div class="background-modal modal-hide"></div>
+
+    <div class="modal modal-hide">
+        <p>
+            Insira todos os dados para continuar!
+        </p>
+
+        <button class="btn-modal">Fechar</button>
+    </div> <!-- modal -->
+
+    <script src="script/script.js"></script>
+</body>
+</html>
